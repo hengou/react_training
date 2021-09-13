@@ -12,9 +12,14 @@ const Button=(props)=>{
     );
 }
 
-// props presence and type check
+// props presence and type check => ressournce consumption 
 Button.propTypes={
     children:PropTypes.any.isRequired,
     type:PropTypes.any
 }
+// default props definition
+Button.defaultProps={
+    children: 'default button'
+}
+
 export default Button;
