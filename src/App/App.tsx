@@ -16,7 +16,7 @@ function App() {
           <img src="/img/cancel_icon.png" alt="cancel"/>
           Cancel
         </Button>
-        <Button/>
+        <Button classColor="primary"></Button>
     </div>
   );
 }
