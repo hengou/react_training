@@ -6,6 +6,8 @@
       "dom.iterable",
       "esnext"
     ],
+    // for dev purpose, no need to write ourselves Any as type
+    "noImplicitAny": false,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
