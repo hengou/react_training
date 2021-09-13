@@ -7,7 +7,8 @@ function App() {
     <div className="App">
       Demat breizh
       <hr/>
-        <Button></Button>
+         {/* all attributes are props elements */}
+        <Button text="Ok" bgcolor="skyblue"></Button>
     </div>
   );
 }

@@ -2,10 +2,11 @@ import React from 'react'
 import './Button.css'
 
 //es6: zero function style
-const Button=()=>{
+const Button=(props)=>{
+    console.log(props)
     return(
         <button className="button">
-            Benjamin
+            {props.text}
         </button>
     );
 }
