@@ -8,7 +8,9 @@ function App() {
       Demat breizh
       <hr/>
          {/* all attributes are props elements */}
-        <Button bgColor="green">
+        <Button bgColor="green" onClickEvent={(arg)=>{
+          console.trace(arg);
+        }}>
           <img src="/img/ok_icon.png" alt="ok"/>
         </Button>
         <Button bgColor="tomato" style={{textDecoration:'underline', backgroundColor: 'blue'}}>
@@ -16,7 +18,9 @@ function App() {
           <img src="/img/cancel_icon.png" alt="cancel"/>
           Cancel
         </Button>
-        <Button/>
+        <Button onClickEvent={(arg)=>{
+          console.error(arg + " click forbidden");
+        }}></Button>
     </div>
   );
 }
