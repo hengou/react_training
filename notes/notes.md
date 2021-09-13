@@ -21,3 +21,4 @@ ES6 => ++ component scope/file : pour pouvoir être utilisé ailleur, il faut "e
 - commence tjr par une majuscule
 - gère son cycle de vie
 - deux types de component =>  fonction (avec nouvelle version, aussi redux, ce type prend de plus en plus d'ampleur. Initialement "stateless" cad: pas de gestion d'état, ni cycle de vie. mais c'est plus de cas avec Hook) / objects Class
+- un composant => un fichier
