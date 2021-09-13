@@ -8,15 +8,15 @@ function App() {
       Demat breizh
       <hr/>
          {/* all attributes are props elements */}
-        <Button type="submit">
+        <Button bgColor="green">
           <img src="/img/ok_icon.png" alt="ok"/>
         </Button>
-        <Button type="reset">
+        <Button bgColor="tomato">
           {/* they are props.children */}
           <img src="/img/cancel_icon.png" alt="cancel"/>
           Cancel
         </Button>
-        <Button classColor="primary"></Button>
+        <Button/>
     </div>
   );
 }

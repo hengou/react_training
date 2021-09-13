@@ -6,7 +6,11 @@ import PropTypes from 'prop-types'
 const Button=(props)=>{
     console.log(props)
     return(
-        <button className={props.classColor ? 'Button '+ props.classColor:'Button'} type={props.type}>
+        <button className={props.classColor ? 'Button '+ props.classColor:'Button'} 
+        type={props.type} 
+        // pass props to css style => 
+        // first {} -> javascript snippet ; second {} -> javascript Object
+        style={{backgroundColor: props.bgColor}}>
             {props.children}
         </button>
     );
@@ -17,11 +21,13 @@ const Button=(props)=>{
 Button.propTypes={
     children:PropTypes.any.isRequired,
     type:PropTypes.any,
-    classColor:PropTypes.string
+    classColor:PropTypes.string,
+    bgColor:PropTypes.string
 }
 // default props definition
 Button.defaultProps={
-    children: 'default button'
+    children: 'default button',
+    bgColor: 'orange'
 }
 
 export default Button;
