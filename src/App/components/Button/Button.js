@@ -10,10 +10,12 @@ const Button=(props)=>{
         type={props.type} 
         // pass props to css style => 
         // first {} -> javascript snippet ; second {} -> javascript Object
-        // spread operator => verser props.style to current object container
+        // spread operator => push props.style to current object container
         // that's to say if backgroundColor defined in props.style, 
         // this one will replace the previous "backgroundColor: props.bgColor"
         style={{backgroundColor: props.bgColor, ...props.style}}
+        // this does inversely 
+        // style={{...props.style, backgroundColor: props.bgColor}}
         onClick={
             // comparing to a classic funciton, function(evt){}
             // raw function keep "this" point to the declared object
