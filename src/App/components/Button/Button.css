@@ -1,11 +1,14 @@
-.button{
-    background-color: green;
+.Button{
+    background-color: lightgreen;
     color:white;
     border-radius: 8px;
-    padding: 10px 20px;
     font-size: medium;
+    height: 128px;
 }
 
-.button:hover{
+.Button:hover{
     background-color: blue;
+}
+.Button>*{
+    vertical-align: middle;
 }

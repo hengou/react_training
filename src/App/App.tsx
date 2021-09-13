@@ -8,7 +8,14 @@ function App() {
       Demat breizh
       <hr/>
          {/* all attributes are props elements */}
-        <Button text="Ok" bgcolor="skyblue"></Button>
+        <Button type="submit">
+          <img src="/img/ok_icon.png" alt="ok"/>
+        </Button>
+        <Button type="reset">
+          {/* they are props.children */}
+          <img src="/img/cancel_icon.png" alt="cancel"/>
+          Cancel
+        </Button>
     </div>
   );
 }
