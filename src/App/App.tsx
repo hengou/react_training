@@ -11,7 +11,7 @@ function App() {
         <Button bgColor="green">
           <img src="/img/ok_icon.png" alt="ok"/>
         </Button>
-        <Button bgColor="tomato">
+        <Button bgColor="tomato" style={{textDecoration:'underline', backgroundColor: 'blue'}}>
           {/* they are props.children */}
           <img src="/img/cancel_icon.png" alt="cancel"/>
           Cancel

@@ -10,7 +10,11 @@ const Button=(props)=>{
         type={props.type} 
         // pass props to css style => 
         // first {} -> javascript snippet ; second {} -> javascript Object
-        style={{backgroundColor: props.bgColor}}>
+        // spread operator => verser props.style to current object container
+        // that's to say if backgroundColor defined in props.style, 
+        // this one will replace the previous "backgroundColor: props.bgColor"
+        style={{backgroundColor: props.bgColor, ...props.style}}>
+        {/* style={props.style, ...{backgroundColor: props.bgColor}}> */}
             {props.children}
         </button>
     );
@@ -22,7 +26,8 @@ Button.propTypes={
     children:PropTypes.any.isRequired,
     type:PropTypes.any,
     classColor:PropTypes.string,
-    bgColor:PropTypes.string
+    bgColor:PropTypes.string,
+    style:PropTypes.object
 }
 // default props definition
 Button.defaultProps={
