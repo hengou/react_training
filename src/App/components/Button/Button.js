@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 //es6: raw function style
 const Button=(props)=>{
     // introduce .state in Class Object
+    // HOOK => useXXX
     const [clicked, setclicked] = useState(false);
     console.log(props);
     return(
