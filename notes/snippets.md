@@ -7,5 +7,7 @@ setState => const [state, setstate] = useState(initialState) // introduce state 
 npx generate-react-cli / with question response => generate-react-cli.json
 -- second step
 npx generate-react-cli component messageInput
+-- 
+npx generate-react-cli c --type=hooked
 -- run sass
 npm i -s node-sass

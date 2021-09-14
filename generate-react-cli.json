@@ -10,6 +10,18 @@
       "withTest": true,
       "withStory": true,
       "withLazy": false
+    },
+    "hooked": {
+      "path": "src/App/components",
+      "customTemplates": {
+        "component": "grc_templates/hooks_template/TemplateName.js",
+        "style": "grc_templates/hooks_template/TemplateName.module.scss",
+        "test": "grc_templates/hooks_template/TemplateName.test.js"
+      },
+      "withLazy": false,
+      "withStory": false,
+      "withStyle": true,
+      "withTest": true
     }
   }
 }
