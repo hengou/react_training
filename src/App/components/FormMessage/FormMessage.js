@@ -31,7 +31,11 @@ const FormMessage = (props) => {
             setFormMessagestate({ ...formMessageState, text: evt.target.value });
           }
         } />
-        <SelectUser users={userListInitialState} />
+        <SelectUser users={userListInitialState} value={formMessageState.destId} onChange={
+          (evt) => {
+            setFormMessagestate({...formMessageState, destId: Number(evt.target.value)})
+          }
+        }/>
         <Button type="submit">Envoyer</Button>
       </form>
 
