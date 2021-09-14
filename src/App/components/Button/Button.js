@@ -1,12 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Button.css'
 import PropTypes from 'prop-types'
 
 //es6: raw function style
 const Button=(props)=>{
-    console.log(props)
+    // introduce .state in Class Object
+    const [clicked, setclicked] = useState(false);
+    console.log(props);
     return(
-        <button className={props.classColor ? 'Button '+ props.classColor:'Button'} 
+        <button className={clicked ? 'Button clicked':'Button'} 
         type={props.type} 
         // pass props to css style => 
         // first {} -> javascript snippet ; second {} -> javascript Object
@@ -21,6 +23,8 @@ const Button=(props)=>{
             // raw function keep "this" point to the declared object
             // use always raw funciton if possible
             (evt) => {
+                setclicked(true);
+                setTimeout(()=>{setclicked(false)}, 250);
                 props.onClickEvent('bla bla');
             }
         }

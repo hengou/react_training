@@ -10,13 +10,14 @@
     background-color: lightblue;
 }
 
-/* .Button.clicked{
-    box-shadow: ;
-} */
+.Button.clicked{
+    background-color: yellow;
+} 
 
 .Button.primary{
     background-color: chartreuse;
 }
+
 .Button.primary:hover{
     background-color: rgb(87, 116, 59);
 }
