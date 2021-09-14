@@ -39,3 +39,7 @@ https://storybook.js.org/docs/react/get-started/introduction
 ### bookys-ebooks
 
 ### props to pass information go down / function callback to go up
+
+### todo 
+story book
+hook + function

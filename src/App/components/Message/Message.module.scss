@@ -1,0 +1,28 @@
+.Message {
+    display: flex;
+    text-align: left;
+    border-top:1px solid rgba(128,128,128,0.3);
+    margin: 3px 0;
+    padding-top:3px;
+    color: blue;
+}
+
+.Message img{
+    max-height: 48px;
+    width:48px;
+    size:auto;
+}
+
+.messageHeader{
+    color: grey;
+    font-size: 10pt;
+}
+.messageSender{
+    display:inline;
+    color: brown;
+    vertical-align: middle;
+}
+.message{
+    display:inline;
+    vertical-align: middle;
+}
