@@ -4,15 +4,34 @@ import styles from './FormMessage.module.scss';
 // import Select from 'react-select';
 import SelectUser from '../SelectUser/SelectUser'
 import { userListInitialState } from '../UserList/UserList'
+import MessageInput from '../MessageInput/MessageInput'
+import Button from '../Button/Button';
 
-export const formMessageInitialState = {};
+export const formMessageInitialState = {
+  text: 'new message',
+  destId: 0
+};
 
 const FormMessage = (props) => {
   const [formMessageState, setFormMessagestate] = useState(formMessageInitialState);
 
   return (
     <div className={styles.FormMessage} data-testid="FormMessage">
-      <SelectUser users={userListInitialState} />
+      {JSON.stringify(formMessageState)}
+      <form onSubmit={
+        (evt) => {
+          evt.preventDefault();
+        }
+      }>
+        <MessageInput value={formMessageState.text} onChange={
+          (evt) => {
+            setFormMessagestate({ ...formMessageState, text: evt.target.value });
+          }
+        } />
+        <SelectUser users={userListInitialState} />
+        <Button type="submit">Envoyer</Button>
+      </form>
+
       {/* <Select options={userListInitialState.map((e, i) => {
         var rObj = {};
         rObj.value = e.id; 

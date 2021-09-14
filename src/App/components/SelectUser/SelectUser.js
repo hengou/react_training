@@ -14,6 +14,8 @@ SelectUser.propTypes = {
   onChange: PropTypes.func.isRequired,
 };
 
-SelectUser.defaultProps = {};
+SelectUser.defaultProps = {
+  onChange: ()=>{},
+};
 
 export default SelectUser;

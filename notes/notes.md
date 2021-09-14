@@ -40,6 +40,8 @@ https://storybook.js.org/docs/react/get-started/introduction
 
 ### props to pass information go down / function callback to go up
 
+### flux / dedux /
+
 ### todo 
 story book
 hook + function
