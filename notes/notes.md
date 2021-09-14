@@ -42,6 +42,11 @@ https://storybook.js.org/docs/react/get-started/introduction
 
 ### flux / dedux /
 
+### hook Function vs state Class
+Class.setState merge by default the new with existent
+Function hook by default does not merge value automatically, so usually we need to use spread operator to achieve this
+"setFormMessagestate({...formMessageState, destId: Number(evt.target.value)})"
+
 ### todo 
 story book
 hook + function
