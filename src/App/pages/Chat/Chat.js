@@ -6,6 +6,7 @@ import FormMessage from '../../components/FormMessage/FormMessage'
 import MessageList from '../../components/MessageList/MessageList'
 import UserList from '../../components/UserList/UserList'
 
+// page design 
 const Chat = () => (
   <div className={styles.Chat} data-testid="Chat">
     <FlexContainer type="horizontal" style={{height:'98vh'}}>
