@@ -23,8 +23,11 @@ const FormMessage = (props) => {
           evt.preventDefault();
         }
       }>
+        {/* in parent component, pass state value to children's props */}
         <MessageInput value={formMessageState.text} onChange={
           (evt) => {
+            // in children component, call function to set the parent's state
+            // this is an exmaple which shows how the infos flow on two directions between parent <-> children components
             setFormMessagestate({ ...formMessageState, text: evt.target.value });
           }
         } />
