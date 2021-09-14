@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from './UserList.module.scss';
 
-export const userListState = {};
+export const userListInitialState = {};
 
 const UserList = (props) => {
-  const [userListState, setUserListstate] = useState(userListState);
+  const [userListState, setUserListstate] = useState(userListInitialState);
   
   return (
     <div className={styles.UserList} data-testid="UserList">

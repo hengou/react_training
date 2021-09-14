@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from './MessageList.module.scss';
 
-export const messageListState = {};
+export const messageListInitialState = {};
 
 const MessageList = (props) => {
-  const [messageListState, setMessageListstate] = useState(messageListState);
+  const [messageListState, setMessageListstate] = useState(messageListInitialState);
   
   return (
     <div className={styles.MessageList} data-testid="MessageList">

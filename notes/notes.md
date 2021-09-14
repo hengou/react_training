@@ -37,3 +37,5 @@ https://storybook.js.org/docs/react/get-started/introduction
 ### react-proto: userful to design during pre-process (define components and statefull/stateless, props) 
 
 ### bookys-ebooks
+
+### props to pass information go down / function callback to go up

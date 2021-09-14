@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from './FormMessage.module.scss';
 
-export const formMessageState = {};
+export const formMessageInitialState = {};
 
 const FormMessage = (props) => {
-  const [formMessageState, setFormMessagestate] = useState(formMessageState);
+  const [formMessageState, setFormMessagestate] = useState(formMessageInitialState);
   
   return (
     <div className={styles.FormMessage} data-testid="FormMessage">
