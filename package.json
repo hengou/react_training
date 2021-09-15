@@ -27,7 +27,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "genHooked": "npx generate-react-cli c --type=hooked ",
-    "genDefault": "npx generate-react-cli c "
+    "genDefault": "npx generate-react-cli c ",
+    "json": "json-server -p 5679 db/db.json"
   },
   "eslintConfig": {
     "extends": [

@@ -2,7 +2,7 @@
 import { createStore } from 'redux'
 import * as REST_CONFIG from '../config/config'
 
-export const initialState = { messages: [], users: [] };
+export const initialState = { messages: [], users: [], lastMessageId: -1 };
 export const ACTIONS = Object.freeze({
     SET_MESSAGES: 'SET_MESSAGES',
     SET_USERS: 'SET_USERS',
@@ -28,11 +28,16 @@ function reducer(state = initialState, action) {
             }, 10000)
 
             setInterval(() => {
-                fetch(REST_CONFIG.ADR_REST + REST_CONFIG.RESSOURCES.messages, { method: 'GET' })
+                fetch(REST_CONFIG.ADR_REST + REST_CONFIG.RESSOURCES.messages + '?id_gte=' + (store.getState().lastMessageId + 1),
+                    { method: 'GET' })
                     .then(flux => flux.json())
                     .then(arr => {
+                        let lastId = store.getState().lastMessageId;
+                        arr.forEach(element => {
+                            if (lastId < element.id) lastId = element.id;
+                        })
                         store.dispatch({
-                            type: ACTIONS.SET_MESSAGES, values: arr
+                            type: ACTIONS.SET_MESSAGES, values: arr, maxId: lastId
                         })
                         return arr;
                     })
@@ -40,7 +45,12 @@ function reducer(state = initialState, action) {
 
             return state;
         case ACTIONS.SET_MESSAGES:
-            return { ...state, messages: action.values };
+            return {
+                ...state,
+                // messages:action.values,
+                messages: [...state.messages, ...action.values],
+                lastMessageId: action.maxId
+            };
         case ACTIONS.SET_USERS:
             return { ...state, users: action.values };
         default: return state;
@@ -62,6 +72,7 @@ store.subscribe(() => {
     console.warn(store.getState());
 })
 
+// call init
 store.dispatch({
     type: PRIVATE_ACTIONS.INIT
 });
