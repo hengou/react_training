@@ -54,3 +54,10 @@ hook + function
 ### react developer tools
 
 ### ES6: Object.seal / Object.freeze
+
+### todo for amthyst & agate
+audit the codes + ESLint(?)
+introduce react generate cli + template
+introduce dev tools => vscode & react developer tools
+
+
