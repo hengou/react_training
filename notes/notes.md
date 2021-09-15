@@ -45,6 +45,7 @@ https://storybook.js.org/docs/react/get-started/introduction
 ### todo 
 story book
 hook + function
+https://fr.reactjs.org/docs/hooks-effect.html
 
 
 ### Redux

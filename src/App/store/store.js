@@ -15,7 +15,7 @@ const PRIVATE_ACTIONS = Object.freeze({
 
 //  function like a worker
 function reducer(state = initialState, action) {
-    console.error(action.type);
+    // console.error(action.type);
     switch (action.type) {
         case PRIVATE_ACTIONS.INIT:
             setInterval(() => {
@@ -27,7 +27,7 @@ function reducer(state = initialState, action) {
                         })
                         return arr;
                     })
-            }, 10000)
+            }, 1000)
 
             setInterval(() => {
                 fetch(REST_CONFIG.ADR_REST + REST_CONFIG.RESSOURCES.messages + '?id_gte=' + (store.getState().tchat.lastMessageId + 1),
@@ -43,7 +43,7 @@ function reducer(state = initialState, action) {
                         })
                         return arr;
                     })
-            }, 10000)
+            }, 1000)
 
             return state;
         case ACTIONS.SET_MESSAGES:
@@ -56,7 +56,6 @@ function reducer(state = initialState, action) {
         case ACTIONS.SET_USERS:
             return { ...state, users: action.values };
         case ACTIONS.SAVE_MESSAGE:
-            console.log(action.values);
             fetch(REST_CONFIG.ADR_REST + REST_CONFIG.RESSOURCES.messages,
                 {
                     method: 'POST',
@@ -77,7 +76,7 @@ const modalInitialState = {
 }
 
 const modalReducer = (state = modalInitialState, action) => {
-    console.error(action.type);
+    // console.error(action.type);
     switch (action.type) {
 
         case 'SHOW':
@@ -92,9 +91,9 @@ const modalReducer = (state = modalInitialState, action) => {
 
 const store = createStore(combineReducers({tchat:reducer, modal:modalReducer}));
 
-store.subscribe(() => {
-    console.warn(store.getState());
-})
+// store.subscribe(() => {
+//     console.warn(store.getState());
+// })
 
 // call init
 store.dispatch({
