@@ -1,40 +1,99 @@
 {
-    "messages": [
-        {
-            "id": 0,
-            "destId": 1,
-            "text": "msg zero",
-            "dateTime": "Tue Sep 14 2021 16:12:08 GMT+0100 (UTC+01:00)"
-        },
-        {
-            "id": 1,
-            "destId": 1,
-            "text": "msg one",
-            "dateTime": "Tue Sep 14 2021 17:12:08 GMT+0100 (UTC+01:00)"
-        },
-        {
-            "id": 2,
-            "destId": 0,
-            "text": "msg two",
-            "dateTime": "Tue Sep 14 2021 18:12:08 GMT+0100 (UTC+01:00)"
-        },
-        {
-            "destId": 1,
-            "text": "msg three",
-            "dateTime": "Tue Sep 14 2021 16:12:08 GMT+0100 (UTC+01:00)",
-            "id": 3
-        }
+  "messages": [
+    {
+      "id": 0,
+      "destId": 1,
+      "text": "msg zero",
+      "dateTime": "Tue Sep 14 2021 16:12:08 GMT+0100 (UTC+01:00)"
+    },
+    {
+      "id": 1,
+      "destId": 1,
+      "text": "msg one",
+      "dateTime": "Tue Sep 14 2021 17:12:08 GMT+0100 (UTC+01:00)"
+    },
+    {
+      "id": 2,
+      "destId": 0,
+      "text": "msg two",
+      "dateTime": "Tue Sep 14 2021 18:12:08 GMT+0100 (UTC+01:00)"
+    },
+    {
+      "destId": 1,
+      "text": "msg three",
+      "dateTime": "Tue Sep 14 2021 16:12:08 GMT+0100 (UTC+01:00)",
+      "id": 3
+    },
+    [
+      {
+        "destId": 1,
+        "text": "msg four",
+        "dateTime": "Tue Sep 15 2021 16:12:08 GMT+0100 (UTC+01:00)"
+      }
     ],
-    "users": [
-        {
-            "id": 0,
-            "nickname": "heng",
-            "avatar": "/img/user.png"
-        },
-        {
-            "id": 1,
-            "nickname": "admin",
-            "avatar": "/img/admin.png"
-        }
-    ]
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    [
+      {
+        "destId": 1,
+        "text": "msg four",
+        "dateTime": "Tue Sep 15 2021 16:12:08 GMT+0100 (UTC+01:00)"
+      }
+    ],
+    {
+      "id": 8
+    },
+    {
+      "destId": 1,
+      "text": "msg four",
+      "dateTime": "Tue Sep 15 2021 16:12:08 GMT+0100 (UTC+01:00)",
+      "id": 9
+    },
+    {
+      "destId": 1,
+      "text": "msg four",
+      "dateTime": "Tue Sep 15 2021 16:12:08 GMT+0100 (UTC+01:00)",
+      "id": 10
+    },
+    {
+      "destId": 1,
+      "text": "msg four",
+      "dateTime": "Tue Sep 15 2021 16:12:08 GMT+0100 (UTC+01:00)",
+      "id": 11
+    },
+    {
+      "destId": 1,
+      "text": "msg four",
+      "dateTime": "Tue Sep 15 2021 16:12:08 GMT+0100 (UTC+01:00)",
+      "id": 12
+    },
+    {
+      "destId": 1,
+      "text": "msg four",
+      "dateTime": "Tue Sep 15 2021 16:12:08 GMT+0100 (UTC+01:00)",
+      "id": 13
+    },
+    {
+      "destId": 1,
+      "text": "msg four",
+      "dateTime": "Tue Sep 15 2021 16:12:08 GMT+0100 (UTC+01:00)",
+      "id": 14
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "nickname": "heng",
+      "avatar": "/img/user.png"
+    },
+    {
+      "id": 1,
+      "nickname": "admin",
+      "avatar": "/img/admin.png"
+    }
+  ]
 }

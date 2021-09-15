@@ -17,4 +17,5 @@ npm i -s node-sass
 npm i -s redux
 -- 3 step, create customized component from the default component
 -- 4 step, generate customized with react cli
+rxrd
 
