@@ -7,17 +7,22 @@ import { userListInitialState } from '../UserList/UserList'
 import MessageInput from '../MessageInput/MessageInput'
 import Button from '../Button/Button';
 import store, { initialState, ACTIONS } from '../../store/store'
+import { useParams } from 'react-router-dom'
+
 
 export const formMessageInitialState = {
   text: 'new message',
-  destId: 0
+  destId: 0,
+  userId: -1
 };
 
 const FormMessage = (props) => {
   const [formMessageState, setFormMessagestate] = useState(formMessageInitialState);
   const [userListState, setUserListstate] = useState(initialState.users);
+  const userId = Number(useParams().id)
   // life cycle
   useEffect(() => {
+    setFormMessagestate({ ...formMessageState, userId: userId })
     // for current state
     setUserListstate(store.getState().tchat.users);
     // for future update
@@ -28,14 +33,14 @@ const FormMessage = (props) => {
 
   return (
     <div className={styles.FormMessage} data-testid="FormMessage">
-      {/* {JSON.stringify(formMessageState)} */}
+      {JSON.stringify(formMessageState)}
       <form onSubmit={
         (evt) => {
           // !!! if not set, the page will be reloaded as soon as acion triggered
           evt.preventDefault();
           store.dispatch({
             type: ACTIONS.SAVE_MESSAGE,
-            value: {...formMessageState, dateTime: new Date().toString()}
+            value: { ...formMessageState, dateTime: new Date().toString() }
           });
         }
       }>
@@ -44,7 +49,7 @@ const FormMessage = (props) => {
           (evt) => {
             // in children component, call function to set the parent's state
             // this is an exmaple which shows how the infos flow on two directions between parent <-> children components
-            setFormMessagestate({ ...formMessageState, text: evt.target.value});
+            setFormMessagestate({ ...formMessageState, text: evt.target.value });
           }
         } />
         <SelectUser users={userListState} value={formMessageState.destId} onChange={
