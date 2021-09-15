@@ -4,6 +4,9 @@ import styles from './UserAuth.module.scss'
 import Button from '../../components/Button/Button';
 import SelectUser from '../../components/SelectUser/SelectUser'
 import store from '../../store/store';
+import { Route, Link } from 'react-router-dom'
+
+
 
 
 class UserAuth extends Component {
@@ -32,7 +35,7 @@ class UserAuth extends Component {
             }
           } users={this.state.users} />
           <hr />
-          <Button onClickEvent={() => { }}>Connexion</Button>
+          <Link to={'/Chat/' + this.state.userId}><Button onClickEvent={() => { }}>Connexion</Button></Link>
           <Button bgColor='green' onClickEvent={() => { }}>Aide</Button>
         </div>
 
