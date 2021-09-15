@@ -27,7 +27,7 @@ function reducer(state = initialState, action) {
                         })
                         return arr;
                     })
-            }, 1000)
+            }, 10000)
 
             setInterval(() => {
                 fetch(REST_CONFIG.ADR_REST + REST_CONFIG.RESSOURCES.messages + '?id_gte=' + (store.getState().tchat.lastMessageId + 1),
@@ -43,7 +43,7 @@ function reducer(state = initialState, action) {
                         })
                         return arr;
                     })
-            }, 1000)
+            }, 10000)
 
             return state;
         case ACTIONS.SET_MESSAGES:

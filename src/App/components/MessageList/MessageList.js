@@ -55,7 +55,7 @@ const MessageList = (props) => {
   return (
     <div className={styles.MessageList} data-testid="MessageList">
       MessageList
-      <div style={{ height: '50%', overflowY: 'scroll' }}>
+      <div style={{ height: '70%', overflowY: 'scroll' }}>
         {
           messageListState.reverse().map((e, i) => {
             return <Message message={

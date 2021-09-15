@@ -31,9 +31,11 @@ const FormMessage = (props) => {
       {/* {JSON.stringify(formMessageState)} */}
       <form onSubmit={
         (evt) => {
+          // !!! if not set, the page will be reloaded as soon as acion triggered
+          evt.preventDefault();
           store.dispatch({
             type: ACTIONS.SAVE_MESSAGE,
-            value: {...formMessageState, "dateTime": new Date().toString}
+            value: {...formMessageState, dateTime: new Date().toString()}
           });
         }
       }>
