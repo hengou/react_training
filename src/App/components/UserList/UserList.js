@@ -25,7 +25,7 @@ const UserList = (props) => {
       {/* {JSON.stringify(userListState)} */}
       <div style={{height:'50%', overflowY:'scroll'}}>
       {
-        userListState.map((e,i)=>{
+        props.users.map((e,i)=>{
           return <User user={e} key={`user-${i}`}/>
         })
       }

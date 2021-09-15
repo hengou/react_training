@@ -3,18 +3,21 @@
     {
       "id": 0,
       "destId": 1,
+      "userId": 0,
       "text": "msg zero",
       "dateTime": "Tue Sep 14 2021 16:12:08 GMT+0100 (UTC+01:00)"
     },
     {
       "id": 1,
       "destId": 1,
+      "userId": 0,
       "text": "msg one",
       "dateTime": "Tue Sep 14 2021 17:12:08 GMT+0100 (UTC+01:00)"
     },
     {
       "id": 2,
       "destId": 0,
+      "userId": 1,
       "text": "msg two",
       "dateTime": "Tue Sep 14 2021 18:12:08 GMT+0100 (UTC+01:00)"
     },
@@ -35,6 +38,11 @@
       "id": 1,
       "nickname": "admin",
       "avatar": "/img/admin.png"
+    },
+    {
+      "nickname": "user",
+      "avatar": "/img/ok_icon.png",
+      "id": 2
     }
   ]
 }

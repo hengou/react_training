@@ -7,21 +7,21 @@ import MessageList from '../../components/MessageList/MessageList'
 import UserList from '../../components/UserList/UserList'
 
 // page design 
-const Chat = () => (
+const Chat = (props) => (
   <div className={styles.Chat} data-testid="Chat">
     <FlexContainer type="horizontal" style={{height:'98vh'}}>
       {/* partie superieur */}
       <FlexContainer type="vertical">
-        <MessageList />
-        <UserList />
+        <MessageList messages={props.messages}/>
+        <UserList users={props.users}/>
       </FlexContainer>
       {/* partie inferieur */}
-      <FormMessage />
+      <FormMessage users={props.users}/>
     </FlexContainer>
   </div>
 );
 
-Chat.propTypes = {};
+Chat.propTypes = {users:[], messages:[]};
 
 Chat.defaultProps = {};
 

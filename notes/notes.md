@@ -50,3 +50,7 @@ Function hook by default does not merge value automatically, so usually we need 
 ### todo 
 story book
 hook + function
+
+### react developer tools
+
+### ES6: Object.seal / Object.freeze
