@@ -45,3 +45,8 @@ https://storybook.js.org/docs/react/get-started/introduction
 ### todo 
 story book
 hook + function
+
+
+### Redux
+like a store, not bind to react.
+reducer (pure function) => return always a new state

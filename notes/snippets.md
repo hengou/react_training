@@ -9,5 +9,7 @@ npx generate-react-cli / with question response => generate-react-cli.json
 npx generate-react-cli component messageInput
 -- 
 npx generate-react-cli c --type=hooked
--- run sass
+-- install sass
 npm i -s node-sass
+-- install redux
+npm i -s redux
