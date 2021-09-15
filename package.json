@@ -14,6 +14,7 @@
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "react-select": "^4.3.1",
     "redux": "^4.1.1",
@@ -26,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "genHooked": "npx generate-react-cli c --type=hooked ",
+    "genHooked": "npx generate-react-cli c --type=hooked",
     "genDefault": "npx generate-react-cli c ",
     "json": "json-server -p 5679 db/db.json"
   },

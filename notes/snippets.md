@@ -19,3 +19,7 @@ npm i -s redux
 -- 4 step, generate customized with react cli
 rxrd
 
+
+-- gps
+npm i react-router-dom
+

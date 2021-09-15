@@ -57,7 +57,7 @@ const MessageList = (props) => {
       MessageList
       <div style={{ height: '70%', overflowY: 'scroll' }}>
         {
-          messageListState.reverse().map((e, i) => {
+          messageListState.sort((a, b) => a.id - b.id).map((e, i) => {
             return <Message message={
               { ...e, user: userListState.find((u) => e.destId === u.id) }
             } key={`mess-${i}`} />

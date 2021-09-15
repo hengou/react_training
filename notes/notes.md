@@ -53,3 +53,10 @@ like a store, not bind to react.
 reducer (pure function) => return always a new state
 
 ### devdocs.io
+
+### cache pbm
+delete package-lock.json
+npm i
+rd /s /q "node_modules"
+npm install
+
