@@ -65,9 +65,7 @@ function reducer(state = initialState, action) {
                     },
                     body: JSON.stringify(action.value)
                 },
-            ).then(data => {
-                console.log(data);
-            });
+            );
             return state;
         default: return state;
     }

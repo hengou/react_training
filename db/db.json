@@ -24,29 +24,6 @@
       "dateTime": "Tue Sep 14 2021 16:12:08 GMT+0100 (UTC+01:00)",
       "id": 3
     },
-    [
-      {
-        "destId": 1,
-        "text": "msg four",
-        "dateTime": "Tue Sep 15 2021 16:12:08 GMT+0100 (UTC+01:00)"
-      }
-    ],
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    [
-      {
-        "destId": 1,
-        "text": "msg four",
-        "dateTime": "Tue Sep 15 2021 16:12:08 GMT+0100 (UTC+01:00)"
-      }
-    ],
-    {
-      "id": 8
-    },
     {
       "destId": 1,
       "text": "msg four",
