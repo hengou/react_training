@@ -57,7 +57,7 @@ hook + function
 
 ### todo for amthyst & agate
 audit the codes + ESLint(?)
-introduce react generate cli + template
-introduce dev tools => vscode & react developer tools
+introduce react generate cli & custom templates 
+introduce dev tools => vscode & react developer tools & npm json rest server
 
 
